@@ -1,0 +1,75 @@
+.container {
+	max-width: 500;
+	margin-top: 5%;
+	margin: auto;
+	font-family: sans-serif;
+	letter-spacing: 0.5px;
+}
+
+.msg-header {
+	background-color: #181c62;
+	color: #fff;
+	padding: 10px;
+}
+
+.chat-page {
+	padding: 0 0 50px 0;
+}
+
+#chatbox {
+	border: 1px solid #ccc;
+	overflow: hidden;
+	padding-bottom: 30px;
+}
+
+.bot-msg {
+	vertical-align: top;
+	float: left;
+	width: 57%;
+}
+
+.bot-msg p {
+	background: #efefef none repeat scroll 0 0;
+	border-radius: 10px;
+	color: #646464;
+	font-size: 14px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding: 5px 10px 5px 12px;
+	width: 100%;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+.user-msg p {
+	background: #181c62 none repeat scroll 0 0;
+	color: #fff;
+	border-radius: 10px;
+	font-size: 14px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding: 5px 10px 5px 12px;
+	width: 100%;
+	overflow-wrap: break-word;
+}
+
+.user-msg {
+	float: left;
+	width: 70%;
+	margin-left: 30%;
+}
+
+.userInput {
+	position: relative;
+	height: 10%;
+}
+
+.form-control {
+	border: none;
+	border-radius: 20px;
+}
+
+.form-control:focus {
+	border-color: none;
+	box-shadow: none;
+}

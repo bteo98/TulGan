@@ -1,0 +1,754 @@
+{
+	"intents": [
+		{
+			"tag": "greeting",
+			"patterns": [
+				"Hi there",
+				"How are you",
+				"Is anyone there?",
+				"Hello",
+				"Good day",
+				"Hi!",
+				"Good morning",
+				"Good afternoon",
+				"Good evening"
+			],
+			"responses": [
+				"Hello, how can I assist you today?",
+				"Hi there, how can I help?"
+			]
+		},
+		{
+			"tag": "goodbye",
+			"patterns": [
+				"Bye",
+				"See you later",
+				"Goodbye",
+				"Nice chatting to you, bye",
+				"Till next time"
+			],
+			"responses": [
+				"See you!",
+				"Have a nice day",
+				"Bye! Come back again soon."
+			]
+		},
+		{
+			"tag": "thanks",
+			"patterns": [
+				"Thanks",
+				"Thank you",
+				"That's helpful",
+				"Awesome, thanks",
+				"Thanks for helping me"
+			],
+			"responses": [
+				"Happy to help!",
+				"Any time!",
+				"My pleasure!",
+				"You’re welcome!"
+			]
+		},
+		{
+			"tag": "noanswer",
+			"patterns": [],
+			"responses": [
+				"Sorry, I could not understand you.",
+				"Not sure if I understand.",
+				"Sorry I could not quite understand that."
+			]
+		},
+		{
+			"tag": "options",
+			"patterns": [
+				"How you could help me?",
+				"What you can do?",
+				"What help you provide?",
+				"How you can be helpful?",
+				"What support is offered",
+				"what can you do"
+			],
+			"responses": [
+				"I can guide you through the NUS admission process or any questions relating to NUS Computing which you might have."
+			]
+		},
+		{
+			"tag": "ComCurriculum",
+			"patterns": [
+				"How is the curriculum for computing like?",
+				"NUS computing curriculum?",
+				"How is the curriculum for com like?",
+				"NUS com curriculum?",
+				"What is the curriculum structure in nus computing?",
+				"How is the curriculum structure in NUS computing?",
+				"What is the curriculum structure in nus comp?",
+				"How is the curriculum structure in NUS com?",
+				"what is the graduation requirements",
+				"graduation requirements",
+				"what is nus graduation requirements",
+				"what is the graduation requirements for computing"
+			],
+			"responses": [
+				"For a single degree, you will have to complete 160 modular credits (MC) and for a double degree, you will have to complete around 200 MC. The 160 MC is broken down into: 20 MC for University Level Requirements, 72 MC for Core Modules, 24 MC for Elective Modules,12 MC for Dissertation or Industry Internship Programme and the remaining 32MC is for Unrestricted Electives (UE). For poly-intake, 20MC is automatically awarded for UE. <p class='botText'>For more information, please visit <a href='https://www.comp.nus.edu.sg/programmes/'>https://www.comp.nus.edu.sg/programmes/</a>"
+			],
+			"context_cond": ["Com"]
+		},
+		{
+			"tag": "ComSci",
+			"patterns": [
+				"Computer Science",
+				"i want to learn more about computer science",
+				"what is computer science",
+				"tell me about computer science",
+				"what's computer science",
+				"How is computer science like",
+				"can you explain to me more about computer science",
+				"why computer science",
+				"what are the specialization available in computer science",
+				"what are the specialization computer science offers",
+				"what are the specialization nus offers for computer science",
+				"computer science specialization",
+				"types of specialization available in computer science",
+				"what are the specialisation available in computer science",
+				"what are the specialisation computer science offers",
+				"what are the specialisation nus offers for computer science",
+				"computer science specialisation",
+				"types of specialisation available in computer science"
+			],
+			"responses": [
+				"Our Computer Science programme offers a wide spectrum of electives across many sub-areas to give students the flexibility to build up expertise for different job domains: Big Data Management and Engineering, Full-Stack Software Engineering, Artificial Intelligence and many others! <p class='botText'>For more information, please visit <a href='https://www.comp.nus.edu.sg/programmes/ug/cs/'>https://www.comp.nus.edu.sg/programmes/ug/cs/</a>"
+			],
+			"context_set": ["Com"]
+		},
+		{
+			"tag": "InfoSys",
+			"patterns": [
+				"what's information system",
+				"i want to learn more about information system",
+				"tell me about information system",
+				"what is information system",
+				"information system",
+				"How is information system like",
+				"can you explain to me more about information system",
+				"why information system",
+				"what are the specialization available in information system",
+				"what are the specialization information system offers",
+				"what are the specialization nus offers for information system",
+				"information system specialization",
+				"types of specialization available in information system",
+				"what are the specialisation available in information system",
+				"what are the specialisation information system offers",
+				"what are the specialisation nus offers for information system",
+				"information system specialisation",
+				"types of specialisation available in information system"
+			],
+			"responses": [
+				"Our Information Systems programme offers three specialisations to give students the opportunity to build expertise for key job domains: Fintech, Digital Innovation and E-Commerce! <p class='botText'>For more information, please visit <a href='https://www.comp.nus.edu.sg/programmes/ug/is/'>https://www.comp.nus.edu.sg/programmes/ug/is/</a>"
+			],
+			"context_set": ["Com"]
+		},
+		{
+			"tag": "ComEng",
+			"patterns": [
+				"Computer Engineering",
+				"i want to learn more about computer engineering",
+				"tell me about Computer Engineering",
+				"what is computer engineering",
+				"waht's computer engineering",
+				"How is computer Engineering like",
+				"can you explain to me more about computer Engineering",
+				"why computer Engineering",
+				"what are the specialization available in computer Engineering",
+				"what are the specialization computer Engineering offers",
+				"what are the specialization nus offers for computer Engineering",
+				"computer Engineering specialization",
+				"types of specialization available in computer Engineering",
+				"what are the specialisation available in computer Engineering",
+				"what are the specialisation computer Engineering offers",
+				"what are the specialisation nus offers for computer Engineering",
+				"computer Engineering specialisation",
+				"types of specialisation available in computer Engineering"
+			],
+			"responses": [
+				"Our Computer Engineering programme offers two specialisations to give students the opportunity to build up expertise for key job domains: Internet of Things and Robotics! <p class='botText'>For more information, please visit <a href='https://www.comp.nus.edu.sg/programmes/ug/ceg/'>https://www.comp.nus.edu.sg/programmes/ug/ceg/</a>"
+			],
+			"context_set": ["Com"]
+		},
+		{
+			"tag": "BZA",
+			"patterns": [
+				"Business analytics",
+				"i want to learn more about business analytics",
+				"tell me about business analytics",
+				"what is business analytics",
+				"what's business analytics",
+				"How is business analytics like",
+				"can you explain to me more about business analytics",
+				"why business analytics",
+				"what are the specialization available in Business analytics",
+				"what are the specialization Business analytics offers",
+				"what are the specialization nus offers for Business analytics",
+				"Business analytics specialization",
+				"types of specialization available in Business analytics",
+				"what are the specialisation available in Business analytics",
+				"what are the specialisation Business analytics offers",
+				"what are the specialisation nus offers for Business analytics",
+				"Business analytics specialisation",
+				"types of specialisation available in Business analytics"
+			],
+			"responses": [
+				"Our Business Analytics programme offers two specialisations to give students the opportunity to build expertise for key job domains: Financial Analytics and Marketing Analytics! <p class='botText'>For more information, please visit <a href='https://www.comp.nus.edu.sg/programmes/ug/ba/'>https://www.comp.nus.edu.sg/programmes/ug/ba/</a>"
+			],
+			"context_set": ["Com"]
+		},
+		{
+			"tag": "InfoSec",
+			"patterns": [
+				"information security",
+				"what is information security",
+				"what's information security",
+				"i want to learn more about information security",
+				"How is information security like",
+				"can you explain to me more about information security",
+				"why information security",
+				"what are the specialization available in information security",
+				"what are the specialization information security offers",
+				"what are the specialization nus offers for information security",
+				"information security specialization",
+				"types of specialization available in information security",
+				"what are the specialisation available in information security",
+				"what are the specialisation information security offers",
+				"what are the specialisation nus offers for information security",
+				"information security specialisation",
+				"types of specialisation available in information security"
+			],
+			"responses": [
+				"Our Computer Science programme offers a wide spectrum of electives across many sub-areas to give students the flexibility to build up expertise for different job domains: Cyber Analyst, Security Consultant, Security Software Engineer and many others! <p class='botText'>For more information, please visit <a href='https://www.comp.nus.edu.sg/programmes/ug/isc/'>https://www.comp.nus.edu.sg/programmes/ug/isc/</a>"
+			],
+			"context_set": ["Com"]
+		},
+		{
+			"tag": "DoubleMajorOffered",
+			"patterns": [
+				"what are the double major available at nus computing",
+				"what are the double major offered by nus computing",
+				"what are the double major available at nus comp",
+				"what are the double major offered by nus comp",
+				"what are the double major available at nus com",
+				"what are the double major offered by nus com",
+				"double major offered by com",
+				"double major offered by computing",
+				"double major offered by comp"
+			],
+			"responses": [
+				"The School of Computing offers direct admissions for  undergraduates to pursue a double major with another faculty. Some of the programmes available are Business Analytics with Economics, Computer Science Courses with Statistics and etc. <p class='botText'>For more information, please visit <a href='https://www.comp.nus.edu.sg/programmes/ug/dmajoro/'>https://www.comp.nus.edu.sg/programmes/ug/dmajoro/</a>"
+			],
+			"context_cond": ["Com"]
+		},
+		{
+			"tag": "ComCourses",
+			"patterns": [
+				"tell me about nus computing",
+				"how many focus area in computing",
+				"what are the focus area in nus computing",
+				"how many focus area does school of computing focuses on",
+				"what are the courses available at computing",
+				"courses offered by computing",
+				"types of courses in computing",
+				"what are the degree offered by computing",
+				"types of degree available at computing",
+				"degree offered by computing",
+				"degree i can apply at nus computing",
+				"what are the courses available at com",
+				"courses offered by com",
+				"types of courses in com",
+				"what are the degree offered by com",
+				"types of degree available at com",
+				"degree offered by com",
+				"degree i can apply at nus com",
+				"what are the courses available at comp",
+				"courses offered by comp",
+				"types of courses in comp",
+				"what are the degree offered by comp",
+				"types of degree available at comp",
+				"degree offered by comp",
+				"degree i can apply at nus comp",
+				"what are the programmes offered by nus computing",
+				"programme by computing",
+				"what are the programmes offered by nus com",
+				"programme by com",
+				"what are the programmes offered by nus comp",
+				"programme by comp",
+				"programme available at computing",
+				"programme available at com",
+				"programme available at comp",
+				"school of computing",
+				"computing",
+				"what majors are there in computing",
+				"what are the different types of major offered by computing",
+				"what are the majors that is available in computing",
+				"what are the majors that is offered by computing"
+			],
+			"responses": [
+				"At NUS Computing, we offer a myriad of programmes such as Computer Science, Computer Engineering, Information Security, Information System and Business Analytics. These programmes will equipped you with the necessary skills to be an entrepreneur, scientist, designer or business executive. <p class='botText'>For more information, please visit <a href='https://www.comp.nus.edu.sg/programmes/'>https://www.comp.nus.edu.sg/programmes/</a>"
+			],
+			"context_cond": ["Com"]
+		},
+		{
+			"tag": "Minor",
+			"patterns": [
+				"How many MC do I need to do a minor?",
+				"MC required for a minor?",
+				"Required number of MC for minor?",
+				"To take a minor, how many modular credits do I need?",
+				"How many modular credits do I need to do a minor?",
+				"modular credits required for a minor?",
+				"Required number of modular credits for minor?",
+				"To take a minor, how many modular credits do I need?"
+			],
+			"responses": [
+				"At least 24 modular credit (MC) is required for a Minor programme, of which up to 8MCs can be counted also towards the Faculty/Major/Minor requirements. <p class='botText'>For more information, please visit <a href='https://www.comp.nus.edu.sg/programmes/ug/minor/'>https://www.comp.nus.edu.sg/programmes/ug/minor/</a>"
+			]
+		},
+		{
+			"tag": "Major",
+			"patterns": [
+				"How many MC do I need to do a major?",
+				"MC required for a major?",
+				"Required number of MC for major?",
+				"To take a major, how many modular credits do I need?",
+				"How many modular credits do I need to do a major?",
+				"how many modular credits do i need for a major",
+				"modular credits required for a major?",
+				"Required number of modular credits for major?",
+				"To take a major, how many modular credits do I need?"
+			],
+			"responses": [
+				"At least 48 modular credit (MC) is required for a Major programme, of which up to 16 MCs can be counted also towards the Faculty/Major/Minor requirements and at least 16 MCs must be at Level 3000. <p class='botText'>For more information, please visit <a href='https://www.comp.nus.edu.sg/programmes/ug/dmajor/'>https://www.comp.nus.edu.sg/programmes/ug/dmajor/</a>"
+			]
+		},
+		{
+			"tag": "CAP",
+			"patterns": [
+				"What is NUS cap like?",
+				"NUS cap?",
+				"How are the gpa in nus classified?",
+				"How are GPA graded?",
+				"What is NUS cap like?",
+				"NUS cap?",
+				"How are the cap in nus classified?",
+				"How are GPA graded?",
+				"How are the cap in nus categorized?",
+				"How are the cap in nus categorised?",
+				"How are the gpa in nus categorized?",
+				"How are the gpa in nus categorised?",
+				"How are the degree classified in NUS?",
+				"degree classification in NUS?"
+			],
+			"responses": [
+				"The criteria for degree classification is as follows: Honours (Highest Distinction): CAP 4.50 and above Honours (Distinction): CAP 4.00 – 4.49 Honours (Merit): CAP 3.50 – 3.99 Honours: CAP 3.00 – 3.49 Pass: CAP 2.00 – 2.99 <p class='botText'>For more information, please visit <a href='http://www.nus.edu.sg/registrar/academic-information-policies/undergraduate-students/continuation-and-graduation-requirements'>http://www.nus.edu.sg/registrar/academic-information-policies/undergraduate-students/continuation-and-graduation-requirements</a>"
+			]
+		},
+		{
+			"tag": "ApplicationOutcome",
+			"patterns": [
+				"What is the outcome of my application",
+				"When will i know the outcome of my application",
+				"How can i check my application outcome",
+				"How will i know if my application is successful",
+				"application outcome",
+				"how do i know if my application is unsuccessful"
+			],
+			"responses": [
+				"Applicants will be informed of the outcome of their application for admission via our Online Application Status Facility (OASF).  The admission e-letter is an official document, downloadable from the OASF, stating your admission application outcome.  The University will not be sending outcome letter by post (unless stated) or email informing the application outcome.  Details are provided at <a href='http://www.nus.edu.sg/oam/accept-reject-offer'>http://www.nus.edu.sg/oam/accept-reject-offer</a>"
+			]
+		},
+		{
+			"tag": "AdmissionInfo",
+			"patterns": [
+				"who can i contact for more information about admission",
+				"who can i contact for more information on admission to NUS",
+				"contact information for admission",
+				"admission contact information",
+				"who can i talk to for more admission information"
+			],
+			"responses": [
+				"For more information on admission, pelase visit this website <a href='http://www.nus.edu.sg/oam/'>http://www.nus.edu.sg/oam/</a> or contact the Office of Admissions at +65 6516 1010."
+			]
+		},
+		{
+			"tag": "AptBasedAdmissions",
+			"patterns": [
+				"What is aptitude-based admissions",
+				"Ways to enter NUS besides grades",
+				"aptitude based admission",
+				"is there other ways of entering nus",
+				"aptitude based application",
+				"can i apply to nus without grades"
+			],
+			"responses": [
+				"The University sets aside up to 15% of university places for consideration of exceptional candidates for admission. For such students who do not met the cut-off points for the course applied to, the University will consider other factors besides academic grades. These students may be admitted on other bases, including demonstrated ability and interest, work experience, leadership, community service and exceptional talent, subject to a minimum level of academic competence. <p class='botText'>For more information, please visit <a href='https://www.askadmissions.nus.edu.sg/app/answers/detail/a_id/176'>https://www.askadmissions.nus.edu.sg/app/answers/detail/a_id/176</a>"
+			]
+		},
+		{
+			"tag": "AppWindow",
+			"patterns": [
+				"How to apply to NUS",
+				"When can I apply to NUS",
+				"When does the application window open",
+				"When do i apply for admission to NUS",
+				"application window",
+				"when can i apply",
+				"when can i apply to nus",
+				"when is the deadline for application",
+				"when is the application deadline",
+				"when is the application window"
+			],
+			"responses": [
+				"Application for admission to NUS undergraduate courses opens in mid-October each year with different closing dates for different applicant category/qualification.  Applications must be submitted online through the Admissions website. <p class='botText'>More details can be found at <a href='https://www.askadmissions.nus.edu.sg/app/answers/detail/a_id/756'>https://www.askadmissions.nus.edu.sg/app/answers/detail/a_id/756</a>"
+			]
+		},
+		{
+			"tag": "CourseRankings",
+			"patterns": [
+				"How do i rank the choice of course I wish to be considered?",
+				"how do i rank my courses choices",
+				"ranking of course choices",
+				"how can i rank my course choices"
+			],
+			"responses": [
+				"Applicants will be considered for admission based on their preferred course choices ranked from first to last choice, ie. if an applicant does not meet the admission criteria for his first choice, he will be considered for his second choice and so on. <p class='botText'>For more information regarding exclusions to the above, please visit <a href='https://www.askadmissions.nus.edu.sg/app/answers/detail/a_id/86'>https://www.askadmissions.nus.edu.sg/app/answers/detail/a_id/86</a>"
+			]
+		},
+		{
+			"tag": "EarlyAppResult",
+			"patterns": [
+				"Request early application outcome",
+				"I have received an offer of admission from another university and has to accept it before NUS is able to inform me of my application outcome by end May.  Can I request an early outcome from NUS to make an informed decision?",
+				"when do i know the outcome of my early application",
+				"outcome of my early application"
+			],
+			"responses": [
+				"Most applicants will receive the outcome of their application for admission to NUS by mid-May. Regardless whether you have accepted/enrolled in other universities, NUS will still process your application and inform you of the outcome between late April and May (those who have attended test/interviews for Architecture, Industrial Design, Landscape Architecture, Law, Medicine, Dentistry and Nursing will receive their outcome in May). All local applicants will accept their offers online via the common acceptance webpage from January to late May (please refer to <a href='https://myaces.nus.edu.sg/uasonline/Login'>https://myaces.nus.edu.sg/uasonline/Login</a> for latest updates on the common acceptance closing date every year)."
+			]
+		},
+		{
+			"tag": "MinMarksAdmission",
+			"patterns": [
+				"What are the minimum marks to get into NUS",
+				"What are the minimum marks to secure admission into NUS",
+				"How high must my score be to enter NUS",
+				"Can a low score enter NUS",
+				"what is the minimum scored required to enter NUS"
+			],
+			"responses": [
+				"Admission to the university is based on academic merit and open competition among the applicant cohort.  The admission criteria vary from year to year depending on the competitiveness of the applicant cohort.  Therefore, there is no fixed minimum marks/grades to secure admission. Potential applicants may refer to the Indicative Grade Profile (<a href='http://www.nus.edu.sg/oam/undergraduate-programmes/indicative-grade-profile-(igp)'>http://www.nus.edu.sg/oam/undergraduate-programmes/indicative-grade-profile-(igp)</a>) and course places of the previous academic year to make more informed choices when applying for admission."
+			]
+		},
+		{
+			"tag": "CourseAppeal",
+			"patterns": [
+				"I have been offered a course already, can i still change my course",
+				"Can I appeal to change to another course after I have been offered a place",
+				"appeal for a change of course",
+				"can i appeal to change my course",
+				"can i change course after being offered",
+				"can i still change my course after accepting"
+			],
+			"responses": [
+				"Yes, you can.  However, appeals to Architecture, Dentistry, Industrial Design, Landscape Architecture, any Law-related courses, Medicine and Nursing will not be considered, unless you have taken the required aptitude tests and interviews conducted earlier. <p class='botText'>For appeals procedures, please visit <a href='http://www.nus.edu.sg/oam/apply-to-nus/after-you-apply/submit-appeals'>http://www.nus.edu.sg/oam/apply-to-nus/after-you-apply/submit-appeals</a>"
+			]
+		},
+		{
+			"tag": "DocuFeeSubmission",
+			"patterns": [
+				"If I apply online, how do I submit my supporting documents and payment?",
+				"How do I check if my supporting documents and payment have been received?",
+				"How to submit supporting documents and payment",
+				"Where do i upload supporting documents",
+				"How to make application fee payment",
+				"How to pay for application fee"
+			],
+			"responses": [
+				"Please refer to <a href='https://www.askadmissions.nus.edu.sg/app/answers/detail/a_id/109'>https://www.askadmissions.nus.edu.sg/app/answers/detail/a_id/109</a> for details"
+			]
+		},
+		{
+			"tag": "ChoiceAppeal",
+			"patterns": [
+				"I was offered admission to my third choice of course. Should I appeal to be admitted to my first and second choices?",
+				"Can i appeal to get my first choice",
+				"How to appeal for higher ranked choice",
+				"can i appela to get my first choice"
+			],
+			"responses": [
+				"The office of admission has considered all of your choices, in order of your preference. If you had satisfied the requirement for the courses listed you would have been offered one of those courses. Therefore, it is highly unlikely for the University to grant you admission to your first or second choice of course as a result of your appeal."
+			]
+		},
+		{
+			"tag": "TuitionFee",
+			"patterns": [
+				"What are the tuition fees in NUS",
+				"Tuition fee",
+				"How much is the tuition fee",
+				"How much must i pay to study in nus",
+				"What is the cost to study in NUS",
+				"what is the fee to study in NUS"
+			],
+			"responses": [
+				"For more information regarding tuition fees, please visit <a href= 'http://www.nus.edu.sg/registrar/administrative-policies-procedures/undergraduate/undergraduate-fees'>http://www.nus.edu.sg/registrar/administrative-policies-procedures/undergraduate/undergraduate-fees</a>"
+			]
+		},
+		{
+			"tag": "AdmissionInterview",
+			"patterns": [
+				"What is the shortlisting and selection procedure for courses requiring a first round of test and interview",
+				"What is the interview process for Medicine like",
+				"What is the interview process for Dentistry like",
+				"What is the interview process for Architecture like",
+				"What is the interview process for Industrial Design like",
+				"What is the interview process for Law like",
+				"What is the interview process for Nursing like",
+				"Interview process",
+				"What is the interview process like"
+			],
+			"responses": [
+				"For more information regarding the shortlisting and selection procedure, please visit <a href='https://www.askadmissions.nus.edu.sg/app/answers/detail/a_id/546'>https://www.askadmissions.nus.edu.sg/app/answers/detail/a_id/546</a>"
+			]
+		},
+		{
+			"tag": "NSOffer",
+			"patterns": [
+				"I am a full-time National Serviceman. What must I do after accepting the offer of admission to a course?",
+				"What must nsfs do after accepting offer to nus",
+				"i am a nsmen and i just accepted the offer to nus",
+				"i am a nsf that just accepted the offer to nus",
+				"as a nsf is there anything i need to do after accepting the offer from nus"
+			],
+			"responses": [
+				"The University will write to you in October of the year before your enrolment to NUS. You will be requested to confirm your acceptance of the reserved course via our online system and select one of the following enrolment options: 1)  Enrolling in August for the Academic Year, 2)  Unable to enrol due to National, Service commitments, AND request for deferment of course to next Academic Year, 3)  Unable to enrol due to National Service commitment BUT I would like to obtain a letter from NUS so that I can apply for disruption to enrol in the current Academic Year, 4)  Rejecting place in NUS"
+			]
+		},
+		{
+			"tag": "RejectedApplication",
+			"patterns": [
+				"I was not offered a course, should i appeal for the same courses or should i appeal for different courses",
+				"Should i appeal for a different course",
+				"can i appeal for the same courses",
+				"can i appeal for the course which i was not offered"
+			],
+			"responses": [
+				"You have already been considered for all your previous choices. If you were not offered a place, it is because you did not meet the admission and/or subject requirements for all your choices. Therefore, appealing for the same choices would be highly unlikely to change the University's prior decision. You are strongly encouraged to appeal for courses other than your previous choices."
+			]
+		},
+		{
+			"tag": "NSReApplication",
+			"patterns": [
+				"Can a nsf re-apply to NUS",
+				"how do i reapply",
+				"how can i reapply",
+				"reapplication for a course in nus",
+				"reapplication to nus",
+				"reapply for another course",
+				"re-apply for another course"
+			],
+			"responses": [
+				"If you wish to re-apply for admission to another course at NUS, you may submit a fresh application for admission during the application period.  Please refer to the application period pertaining to your qualification at <a href='http://www.nus.edu.sg/oam/apply-to-nus.html'>http://www.nus.edu.sg/oam/apply-to-nus.html</a> You should only indicate the course(s) that you wish to be considered. <p class='botText'>For more information, please visit <a href='http://www.nus.edu.sg/oam/apply-to-nus/returning-national-servicemen/information-for-full-time-ns-men'>http://www.nus.edu.sg/oam/apply-to-nus/returning-national-servicemen/information-for-full-time-ns-men</a>"
+			]
+		},
+		{
+			"tag": "AdmissionSelection",
+			"patterns": [
+				"How is one selected for admission to a course in NUS?",
+				"How is the selection procedure like",
+				"How will i be selected for a course",
+				"What is the selection procedure like",
+				"nus selection process",
+				"admission selection process"
+			],
+			"responses": [
+				"Admission is based on academic merit and open competition among all eligible applicants for places available.  Academic merit is used to determine admission for non-interview courses and a minimum academic proficiency is still required for students considered under Aptitude Based Admissions.  For admission to Architecture, Dentistry, Industrial Design, Landscape Architecture, Medicine, Nursing, any Law-related courses and some Double/Concurrent Degree Programmes, it is also dependent on the outcome of interviews and/or aptitude tests (please check the respective faculty website for the specific requirements). <p class='botText'>For more information, please refer to <a href='https://www.askadmissions.nus.edu.sg/app/answers/detail/a_id/83'>https://www.askadmissions.nus.edu.sg/app/answers/detail/a_id/83</a>"
+			]
+		},
+		{
+			"tag": "ScholarshipInterview",
+			"patterns": [
+				"Nus scholarship interview",
+				"When and how will the selection interviews for the NUS Scholarships be conducted",
+				"When will nus scholarship results be released",
+				"What is the selection process of the nus scholarship like",
+				"scholarship selection process",
+				"what is the selection process like for nus scholarship"
+			],
+			"responses": [
+				"Selection interviews for the NUS Scholarships (for Singapore Citizens) will be conducted from March to May each year.  Shortlisted applicants will be invited specifically for scholarship selection interviews. Applicants who are shortlisted will be notified of their interview details through email. Applicants will be informed of the outcome of their application for scholarships via the Online Application Status Facility (OASF) by end-May. The scholarship e-letter is an official document, downloadable from the OASF, stating your scholarship application outcome. No other outcome letter will be posted to you. <p class='botText'>For more information, please refer to <a href='https://www.askadmissions.nus.edu.sg/app/answers/detail/a_id/807'>https://www.askadmissions.nus.edu.sg/app/answers/detail/a_id/807</a>"
+			]
+		},
+		{
+			"tag": "PartTimeDegree",
+			"patterns": [
+				"Does NUS offer part time undergraduate degree courses",
+				"part time undergraduate degree courses",
+				"part time degree",
+				"part-time undergraduate degree courses",
+				"part-time degree",
+				"parttime undergraduate degree courses",
+				"parttime degree",
+				"does nus offer part time degree",
+				"does nus offer parttime degree"
+			],
+			"responses": [
+				"Yes, part-time undergraduate courses such as the Bachelor of Technology (Engineering/Computing) programmes are offered by our School of Continuing and Lifelong Education (SCALE), please refer to <a href='http://scale.nus.edu.sg/programmes/btech.html'>http://scale.nus.edu.sg/programmes/btech.html</a> for more information."
+			]
+		},
+		{
+			"tag": "SubmitDocs",
+			"patterns": [
+				"How do i submit supporting documents",
+				"submit supporting documents online",
+				"submission of supporting documents online"
+			],
+			"responses": [
+				"All applicants are required to submit their supporting documents electronically through the 'Online Submission of Supporting Document' option when they login to the Online Application Status Facility (OASF). An Application Checklist is available in the respective application category (<a href='http://www.nus.edu.sg/oam/apply-to-nus.html'>http://www.nus.edu.sg/oam/apply-to-nus.html</a>) to guide you on document submission. You are not required to mail or fax your documents after you have submitted your documents electronically.  You may login to the OASF 3-5 working days after electronic submission to check if your supporting documents have been received. Submitting your supporting documents via the OASF will save time and cost, and speed up the processing of your application."
+			]
+		},
+		{
+			"tag": "Defer",
+			"patterns": [
+				"can i defer my studies",
+				"deferring studies",
+				"will nus reserve a place for me if i defer my studies",
+				"gap year programme",
+				"does nus offer a gap year"
+			],
+			"responses": [
+				"Currently, we do not offer a gap year programme.  Places will ONLY be reserved for applicants serving full-time National Service (NS) in Singapore as they are required to complete their NS liability before pursuing tertiary education. However, for extenuating circumstances such as a medical condition that prevents the successful applicant from enrolling with us, the applicant should submit an appeal to the Office of Admissions for consideration. You should apply for University admission in the year you are ready to enroll."
+			]
+		},
+		{
+			"tag": "SUOpts",
+			"patterns": [
+				"How do the SU system works",
+				"What is the SU grading options",
+				"What can I su",
+				"what does the SU work",
+				"How do su work",
+				"what is su"
+				
+			],
+			"responses": [
+				"At the end of the semester, letter grades for modules will be released to students. Under the S/U mechanism, students may choose to retain the letter grade and have it factored into their CAP, or choose to exercise the S/U option on a module, in which case the letter grade will not be shown on the transcript nor computed towards the CAP. A ‘S' grade is assigned if the student receives a ‘C' grade or above for the module. Conversely, the student will receive a ‘U' if the grade obtained is lower than a ‘C' grade. Modular credits will be earned only if a ‘Satisfactory' (S) grade is attained. <p class='botText'>For more information, please visit <a href='http://www.nus.edu.sg/registrar/academic-activities/satisfactory-unsatisfactory-(s-u)-option'>http://www.nus.edu.sg/registrar/academic-activities/satisfactory-unsatisfactory-(s-u)-option</a>"
+			]
+		},
+		{
+			"tag": "ModAllocation",
+			"patterns": [
+				"how are the modules allocated",
+				"why did i not get the module i bid for",
+				"how does nus allocate the modules",
+				"how are the modules being allocated",
+				"how come i did not get the module i bid for"
+			],
+			"responses": [
+				"ModReg@EduRec employs a rules-driven, priority-based engine to allocate modules based on each student’s: Curricular needs; Seniority in the programme; and Module preferences. For more information, please refer to <a href='http://www.nus.edu.sg/ModReg/'>http://www.nus.edu.sg/ModReg/</a>."
+			]
+		},
+		{
+			"tag": "ModApplicationDate",
+			"patterns": [
+				"when can i apply for my module",
+				"module application date",
+				"when can i register for my module",
+				"when is the module registration date",
+				"when is the opening date for module registration"
+				
+			],
+			"responses": [
+				"Please refer to this link to check on the Module Registration Date <a href='http://www.nus.edu.sg/ModReg/'>http://www.nus.edu.sg/ModReg/</a>."
+			]
+		},
+		{
+			"tag": "ModReg",
+			"patterns": [
+				"how do i register for my module",
+				"module registration",
+				"how to register for my module",
+				"how do we register for modules",
+				"where do we go to register for modules"
+			],
+			"responses": [
+				"You can make a register your modules via the <a href='https://myedurec.nus.edu.sg/psc/cs90prd/EMPLOYEE/SA/c/NUI_FRAMEWORK.PT_LANDINGPAGE.GBL?&'>Education Records System</a> (EduRec) (Navigation: Academics > Module Registration > Select Modules). You are required to complete your Academic Plan declaration before proceeding with the registration."
+			]
+		},
+		{
+			"tag": "AcadCalender",
+			"patterns": [
+				"where can i get the academic calender",
+				"academic calender",
+				"when does school starts",
+				"can i get a copy of the academic calender",
+				"when does the new ay starts"
+			],
+			"responses": [
+				"You can obtain a copy of the Academic Calender via <a href='http://www.nus.edu.sg/registrar/calendar'>http://www.nus.edu.sg/registrar/calendar</a>."
+			]
+		},
+		{
+			"tag": "HowToSU",
+			"patterns": [
+				"How do i su",
+				"how do i apply my Su",
+				"where do i go to su",
+				"where do i go to to apply my su",
+				"what is the link i should visit to apply my su",
+				"where should i go to use my su",
+				"where should i go to su",
+				"how to su",
+				"How do i s/u",
+				"how do i apply my S/u",
+				"where do i go to s/u",
+				"where do i go to to apply my s/u",
+				"what is the link i should visit to apply my s/u",
+				"where should i go to use my s/u",
+				"where should i go to s/u",
+				"how to s/u"
+				
+			],
+			"responses": [
+				"You can make a declaration via the <a href='https://myedurec.nus.edu.sg/psc/cs90prd/EMPLOYEE/SA/c/NUI_FRAMEWORK.PT_LANDINGPAGE.GBL?&'>Education Records System</a> (EduRec) (Navigation: Academics > Examinations > Submit S/U Declarations). Your S/U options declared will be final and irrevocable. Do take note of the deadline as you will not be allowed to declare the S/U option after the deadline."
+			]
+		},
+		{
+			"tag": "NumSU",
+			"patterns": [
+				"How many su can i exercise",
+				"how many su can i use",
+				"how many SU do i have",
+				"how many Su can i carry over",
+				"what are the number of su i am given",
+				"how many su am i given",
+				"what are the number of su i have",
+				"how many su am i allowed to carry over to semester 2",
+				"what are the number of su can i carry over",
+				"how many su can i carry over"
+				
+			],
+			"responses": [
+				"Students may exercise S/U option for up to 32 MCs in the first two regular semesters; if this is not fully utilized, the S/U option may still be exercised in subsequent semesters, for up to 12 MCs. Variations on the limit of S/U options that can be exercised may apply for specific groups of students. <p class='botText'>For more information, please visit <a href='http://www.nus.edu.sg/registrar/academic-activities/satisfactory-unsatisfactory-(s-u)-option'>http://www.nus.edu.sg/registrar/academic-activities/satisfactory-unsatisfactory-(s-u)-option</a>"
+			]
+		},
+		{
+			"tag": "NotiofInterview",
+			"patterns": [
+				"When will I be informed that I have been shortlisted for interviews or tests",
+				"how do i know if im shortlisted",
+				"how will i be informed if im shortlisted",
+				"how will i know that i have been shortlisted for an interview",
+				"how do i know that i have been shortlisted"
+			],
+			"responses": [
+				"Students who have applied for admission to Architecture, Dentistry, Industrial Design, Landscape Architecture, Law, Medicine and/or Nursing will be notified via the Online Application Status Facility in end-March/April.  As the shortlist notification will be released electronically, the electronic letter to attend interview/test will serve as the official document from the University.  No hardcopy letter and email will be sent to you.  <p class='botText'>Please visit <a href='http://www.nus.edu.sg/oam/faculty-interviews-and-test-dates'>http://www.nus.edu.sg/oam/faculty-interviews-and-test-dates</a> for more information."
+			]
+		}
+	]
+}

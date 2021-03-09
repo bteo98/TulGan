@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link
+			rel="stylesheet"
+			href="{{url_for('static', filename='style.css')}}"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+	</head>
+	<body>
+		<div class="container">
+			<div class="col-sm-6 offset-sm-3">
+				<div class="msg-header">
+					<img
+						src="https://user-images.githubusercontent.com/47237334/83617987-6f6bec80-a5bc-11ea-9205-46ce79b4eab0.jpg"
+						alt="logo"
+						style="width: 40px; height: 40px; border-radius: 40px;"
+					/>
+					TulGan
+				</div>
+			</div>
+			<div class="chat-page">
+				<div class="col-sm-6 offset-sm-3">
+					<div
+						id="chatbox"
+						class="border border-secondary"
+						class="overflow-auto msgs"
+						style="overflow-y: scroll; height: 500px;"
+					>
+						<div class="bot-msg">
+							<p class="botText">
+								<span
+									>Hello, I am a chatbot designed to answer
+									questions that may be asked by freshmen
+									entering NUS School of Computing. How may I
+									assist you today?</span
+								>
+							</p>
+						</div>
+					</div>
+					<div class="userInput">
+						<div class="input-group mb-3">
+							<input
+								type="text"
+								class="form-control"
+								placeholder="Type Your Message Here"
+								aria-label="Message"
+								id="textInput"
+								name="user_inpt"
+							/>
+							<div class="input-group-append">
+								<button
+									class="btn btn-primary"
+									type="submit"
+									id="sendBtn"
+									style="
+										background-color: #181c62;
+										color: #fff;
+									"
+								>
+									<i class="fa fa-paper-plane"> </i>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			function getFeedback() {
+				var feedbackBtn =
+					'<div class="bot-msg">' +
+					'<button class="btn btn-primary" type="submit" id="upBtn" style="background-color: #efefef; color: #646464; border-color: #fff;" title="Response was accurate.">' +
+					'<i class="fa fa-thumbs-up"> </i></button>' +
+					'<button class="btn btn-primary" type="submit" id="downBtn" style="background-color: #efefef; color: #646464; border-color: #fff" title="Response was inaccurate.">' +
+					'<i class="fa fa-thumbs-down"> </i>' +
+					"</button></div>";
+
+				$("#chatbox").append(feedbackBtn);
+			}
+
+			function getResponse() {
+				let userText = $("#textInput").val();
+				if (userText.length > 0) {
+					$("#upBtn").remove();
+					$("#downBtn").remove();
+					let userHtml =
+						'<div class="user-msg" id="usermsg"><p class="userText"><span>' +
+						userText +
+						"</span></p></div>";
+					$("#textInput").val("");
+					$("#chatbox").append(userHtml);
+					$.get("/process", { msg: userText }).done(function (data) {
+						var botHtml =
+							'<div class="bot-msg" id="botmsg"><p class="botText"><span>' +
+							data +
+							"</span></p></div>";
+						$("#chatbox").append(botHtml);
+						getFeedback();
+						$("#chatbox").scrollTop(10000000000);
+					});
+				}
+			}
+
+			$("#textInput").keypress(function (e) {
+				//if enter key is pressed
+				if (e.which == 13) {
+					getResponse();
+				}
+			});
+
+			$("#sendBtn").click(function () {
+				getResponse();
+			});
+
+			$(document).on("click", "#upBtn", function () {
+				$.get("/vote", { relevance: true });
+				var msg =
+					'<div class="bot-msg" id="botmsg"><p class="botText"><span>' +
+					"Thank you for the feedback!" +
+					"</span></p></div>";
+				$("#chatbox").append(msg);
+				$("#chatbox").scrollTop(10000000000);
+			});
+
+			$(document).on("click", "#downBtn", function () {
+				$.get("/vote", { relevance: false });
+				var msg =
+					'<div class="bot-msg" id="botmsg"><p class="botText"><span>' +
+					"Thank you for the feedback!" +
+					"</span></p></div>";
+				$("#chatbox").append(msg);
+				$("#chatbox").scrollTop(10000000000);
+			});
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	</body>
+</html>
